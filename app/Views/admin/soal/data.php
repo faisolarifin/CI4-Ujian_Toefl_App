@@ -9,7 +9,7 @@
             <div class="col px-5 py-4 shadow rounded">
                 <div class="row mb-3">
                     <div class="col text-center">
-                        <h4>SOAL READING</h4>
+                        <h4>SOAL <?= $sec ?></h4>
                     </div>
                     <div class="row mt-4">
                         <div class="col-3">

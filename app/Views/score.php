@@ -19,7 +19,12 @@
                     <div class="col">
                         <table class="table table-bordered">
                             <tr>
-                                <td>Nama : Ach. Faisol S. Arifin</td>
+                                <td>Nama :                          
+                                <?php
+                                    $session = \Config\Services::session();
+                                    echo @$session->nama;
+                                ?>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Your Toefl Score : <strong><?= $score ?></strong></td>

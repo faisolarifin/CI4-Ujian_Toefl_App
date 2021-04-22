@@ -13,11 +13,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-8">
                         <p><?= $no. ". ". $data['soal'] ?></p>
                         <form action="/save/<?= $no ?>" method="post">
                         <div class="row">
-                            <div class="col-sm-8 ms-4 border">
+                            <div class="col ms-4 border">
                                 <input type="hidden" name="id_soal" value="<?= $data['id_soal'] ?>">
                                 <div class="form-check my-3">
                                     <input class="form-check-input" type="radio" name="jawaban" id="gridRadios1" value="A" <?= $jawab=='A' ? 'checked' : '' ?>>
@@ -54,8 +54,8 @@
                         </div>
                         </form>
                     </div>
-                    <div class="col-6">
-                        <?= $data['artikel'] ?>
+                    <div class="col-4">
+                        <?= $data['content'] ?>
                     </div>
                 </div>
             </div>

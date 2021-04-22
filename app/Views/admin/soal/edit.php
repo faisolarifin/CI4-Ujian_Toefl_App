@@ -53,7 +53,7 @@
                             </div>
                             <div class="mb-3">
                             <label class="form-label">Opsi B</label>
-                            <input type="text" class="form-control" name="b" value="<?= $s['opsi_c'] ?>">
+                            <input type="text" class="form-control" name="b" value="<?= $s['opsi_b'] ?>">
                             </div>
                             <div class="mb-3">
                             <label class="form-label">Opsi C</label>
