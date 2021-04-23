@@ -119,7 +119,7 @@ class Admin extends BaseController
 	{
 		if ($t == 1) $sec = 'READING';
 		elseif ($t == 2) $sec = 'LISTENING';
-		elseif ($t == 3) $sec = 'STRUCTURE/WRITTEN';
+		elseif ($t == 3) $sec = 'STRUCTURE/WRITTEN ';
 		return view('admin/soal/data', [
 			'soal' => $this->soal->getSoal()->where(['t_soal.id_bagian' => $t])->paginate(10, 'user'),
 			'pager' => $this->soal->pager,

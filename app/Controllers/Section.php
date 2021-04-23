@@ -38,7 +38,7 @@ class Section extends BaseController
 	public function bagian()
 	{
 		return view('list_section', [
-			'data' => $this->tes->getSection($this->session->id)
+			'data' => $this->tes->getSection($this->session->id)->findAll()
 		]);
 	}
 	public function score()
@@ -56,7 +56,7 @@ class Section extends BaseController
 		if ($score !== "not finished") $score = ceil(($score / 3) * 10). '/300';
 
 		return view('score', [
-			'data' => $this->tes->getSection($this->session->id),
+			'data' => $this->tes->getSection($this->session->id)->findAll(),
 			'score' => $score
 		]);
 	}

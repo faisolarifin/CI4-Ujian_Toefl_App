@@ -44,7 +44,7 @@
                                 <tr>
                                     <td><?= $row['nm_section'] ?></td>
                                     <td class="text-center"><?= $row['jml_benar'] ?></td>
-                                    <td class="text-center">30</td>
+                                    <td class="text-center"><?= $row['jml_soal'] ?></td>
                                 </tr>
                             <?php
                                 endforeach;

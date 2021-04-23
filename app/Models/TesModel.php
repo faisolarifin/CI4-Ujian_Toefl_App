@@ -18,9 +18,11 @@ class TesModel extends Model
     public function getSection($user)
     {
         $this->join('t_bagian', 't_bagian.id_bagian = t_tes.id_bagian', 'LEFT');
+        $this->join('t_soal', 't_bagian.id_bagian = t_soal.id_bagian', 'LEFT');
         $this->select('t_tes.*');
         $this->select('t_bagian.*');
-        return $this->where(['t_tes.id_user' => $user])->findAll();
+        $this->select('count(t_soal.id_bagian) jml_soal');
+        return $this->where(['t_tes.id_user' => $user])->groupBy('t_bagian.id_bagian');
     }
 
     public function getSectionById($tes)

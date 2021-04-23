@@ -22,9 +22,13 @@
                         ?>
                         <div class="shadow-sm p-3 mb-3 bg-body rounded border">
                             <div class="row">
-                                <div class="col-8">
+                                <div class="col-6">
                                     <p><?= $row['nm_section'] ?></p>
                                     <small><?= $row['keterangan'] ?></small>
+                                </div>
+                                <div class="col-4">
+                                    <p><?= $row['limit_time'] ?> Minute</p>
+                                    <small><?= $row['jml_soal'] ?> Question</small>
                                 </div>
                                 <div class="col">
                                     <?php

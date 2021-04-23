@@ -15,5 +15,4 @@ class BagianModel extends Model
     protected $useSoftDeletes = false;
     protected $allowedFields = ['id_bagian', 'nm_section', 'limit_time', 'keterangan', 'direction'];
 
-
 }
