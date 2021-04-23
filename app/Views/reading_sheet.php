@@ -48,7 +48,6 @@
                         <div class="row mt-5">
                             <div class="col text-center">
                                 <?= $no > 1 ? '<button type="submit" class="btn btn-primary btn-sm" name="back" value="back">< Back</button>' : ''; ?>
-                                <a href="/exam/<?= ++$no ?>" class="btn btn-warning btn-sm mx-2">Skip</a>
                                 <button type="submit" class="btn btn-primary btn-sm" name="next" value="next">Next ></button>                                                    
                             </div>
                         </div>
